@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="askForName()">
+    <header>
+        <div class="logo">
+            <img src="assets/revou-img.png" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Our Profile</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Message Us</a>
+        </nav>
+        <div class="nav-but-hp" onclick="toggleMenu()">&#9776;</div>
+    </header>
+    
+    <div class="welcome-section">
+        <p id="output-from-askForName"></p>
+        <p>Indonesia's Largest Fresh Graduates Skilling Platform</p>
+        <img src="assets/office3.jpg" alt="Image">
+    </div>
+
+    <div class="profile-section">
+        <h2 style="color: var(--primary-color); font-weight: 800;">Our Profile</h2>
+        <div class="profile-content">
+            <div class="profile-item">
+                <h3 style="color: var(--primary-color); font-weight: bold;">Kindness</h3>
+                <p style="color: white;">
+                    We make time to help our colleagues, even if it doesn’t directly benefit us (or our team). We are lifting everyone around us as we genuinely want them to succeed. We believe that career progression at RevoU is not a zero-sum game: helping each other will benefit everyone’s career.
+                </p>
+            </div>
+            <div class="profile-item">
+                <h3 style="color: var(--primary-color); font-weight: bold;">Candor</h3>
+                <p style="color: white;">
+                    We are challenging cultural habits of keeping things for ourselves and giving hierarchies too much importance. We seek and give feedback often. We are not afraid of saying what we think, every time we think is in the best interest of the company, even if it’s uncomfortable. Especially when it’s uncomfortable.
+                </p>
+            </div>
+            <div class="profile-item">
+                <h3 style="color: var(--primary-color); font-weight: bold;">Highest Standards</h3>
+                <p style="color: white;">
+                    We are never satisfied with the status quo and any success obtained so far. We strive to always improve and do better. We fight complacency by being healthily paranoid about the success we achieved so far and are aware of the challenges the future will hold. We know that there is so much more we can do and we always dream bigger.
+                </p>
+            </div>
+            <div class="profile-item">
+                <h3 style="color: var(--primary-color); font-weight: bold;">Passion</h3>
+                <p style="color: white;">
+                    We are passionate about life in general and work as a subset of it. We want to do work that matters. Work that has a real, quantifiable impact on the lives of people around us and on society at large. We see work as a fundamental part of life, not something to separate from it or to “balance” with.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="headquarter-section">
+        <h2 style="color: black; font-weight: 800;">Our Headquarter</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-image">
+                <img src="assets/hq1.jpg" alt="Jakarta">
+                </div>
+                <h3>Jakarta</h3>
+            </div>
+              
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/hq2.jpg" alt="Bandung">
+                </div>
+                <h3>Bandung</h3>
+            </div>
+            
+            <div class="card">
+                <div class="card-image">
+                <img src="assets/hq3.jpg" alt="Surabaya">
+                </div>
+                <h3>Surabaya</h3>
+            </div>
+            
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/hq4.jpg" alt="Semarang">
+                </div>
+                <h3>Semarang</h3>
+            </div>
+        </div>
+          
+    </div>
+
+    <div class="message-section">
+        <h2 style="color: black; font-weight: 800;">Message Us</h2>
+    
+        <div class="form-container">
+            <div class="card">
+                <h2>User Input</h2>
+                <form id="userForm">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="dob"><br>
+                    <label for="gender">Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message"></textarea><br>
+                    <input type="button" value="Submit" onclick="submitForm()">
+                </form>
+            </div>
+            <div class="card" id="card2">
+                <h2>User Input Display</h2>
+                <p id="currentTime"></p>
+                <p id="userData"></p>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

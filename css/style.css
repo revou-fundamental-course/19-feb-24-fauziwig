@@ -1,0 +1,202 @@
+/* Warna primer */
+:root {
+    --primary-color: rgba(254, 222, 62, 1); /* Atur warna primer sesuai kebutuhan Anda */
+    --secondary-color: rgba(47, 46, 48, 1);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.nav-but-hp {
+    display: none; /* Initially hidden */
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide navbar */
+        flex-direction: column; /* Align items vertically */
+        background-color: #333; /* Change background color */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+
+    .navbar a {
+        padding: 10px; /* Adjust padding */
+        text-align: center; /* Center align text */
+        border-bottom: 1px solid #ddd; /* Add border between items */
+    }
+
+    .nav-but-hp {
+        display: block; /* Show navbar toggle button */
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Lebih lanjut, mengatur lebar 100% agar cocok dengan lebar layar */
+    .card {
+        width: 100%;
+    }
+}
+
+/* Home Page */
+.welcome-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome-section p:first-child {
+    /* Gaya CSS khusus untuk tag <p> pertama di dalam .welcome-section */
+    font-weight: 800;
+    font-size: 30px;
+    color: black;
+}
+
+
+.welcome-section p {
+    margin: 10px 0;
+}
+
+.welcome-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Our Profile Page */
+.profile-section {
+    background-color: var(--secondary-color);
+    padding: 20px;
+}
+
+.profile-section h2{
+    align-items: center;
+    text-align: center;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-item {
+    margin-bottom: 20px;
+}
+
+/* Headquarter Page  */
+.headquarter-section h2{
+    align-items: center;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around; /* Untuk memberikan jarak yang merata di sekitar setiap card */
+  }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .card-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Membuat lingkaran */
+    overflow: hidden; /* Agar gambar tidak keluar dari lingkaran */
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Agar gambar terisi penuh pada lingkaran */
+  }
+  
+  h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  /* Message Page  */
+.message-section h2{
+    align-items: center;
+    text-align: center;
+}
+
+.form-container {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form-container .card {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+#display {
+    font-size: 16px;
+}
+
+
+
